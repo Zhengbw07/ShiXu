@@ -1,0 +1,155 @@
+<!--index.wxml-->
+<swiper indicator-dots='true' class='main' style='height:33rem' duration='5' current='{{swp_crt}}' >
+  <block>
+    <swiper-item>
+      <view class='xianshi'>
+
+        <view class='user-qi'>
+          <text class='dazi'>{{qi}}期\n</text>
+          <text class="sxzq">{{shixu}}/{{zhouqi}}\n</text>
+          <text class='dazi'>{{tteexxtt}}</text>
+          <button bindtap='jia1_1'>+1s</button>
+          <button bindtap='jian1_1'>-1s</button>
+        </view>
+        <view class='user-qi-2'>
+          <text class='dazi'>{{qi2}}期\n</text>
+          <text class='sxzq'>{{shixu2}}/{{zhouqi2}}\n</text>
+          <text class='dazi'>{{tteexxtt2}}</text>
+          <button bindtap='jia1_2'>+1s</button>
+          <button bindtap='jian1_2'>-1s</button>
+        </view>
+
+      </view>
+
+      <view>
+        <button bindtap='suoding'>{{suoding}}</button>
+      </view>
+      <view>
+      <text>{{test_}}\n</text>
+      <text>{{tst}}{{tst2}}</text>
+      </view>
+    </swiper-item>
+
+    <swiper-item>
+
+    <view>
+    <form bindsubmit='c_p' >
+    <view class='row3column1'>
+    <view class='ccl_i'>A:<input type='digit' name='p_A' value='{{p_A}}'></input></view>
+    <view class='ccl_i'>B:<input type='text' name='p_B' value='{{p_B}}'></input></view>
+    <view class='ccl_i'>V1:<input type='digit' name='p_V1' value=''></input></view>
+    <view>V2:<input type='digit' name='p_V2' value=''></input></view>
+    </view>
+    <view class='ccl_o'>
+    <view><button form-type='submit' class=''>等於</button></view>
+    <view><text class='ccl'>{{p_rst}}</text></view>
+    </view>
+    </form>
+    </view>
+
+    <view>
+    <form bindsubmit='c_n' >
+    <view class='row3column1'>
+    <view class='ccl_i'>A:<input type='digit' name='n_A' value='{{n_A}}'></input></view>
+    <view class='ccl_i'>B:<input type='text' name='n_B' value='{{n_B}}'></input></view>
+    <view class='ccl_i'>C:<input type='text' name='n_C' value='{{n_C}}'></input></view>
+    <view class='ccl_i'>9.9:<input type='digit' name='n_99' value='{{n_99}}'></input></view>
+    <view>14.9:<input type='digit' name='n_149' value='{{n_149}}'></input></view>
+    </view>
+    <view class='ccl_o'>
+    <view><button form-type='submit' class=''>等於</button></view>
+    <view><text class='ccl'>{{n_rst}}</text></view>
+    </view>
+    </form>
+    </view>
+
+    </swiper-item>
+
+    <swiper-item>
+
+      <view>
+
+        <form bindsubmit='form_value'>
+          <view class='erqi'>
+
+            <view class='row1'>
+              <view class='row1column1'>
+
+                <input type='text' maxlength='1' value='{{qi}}' name='qi' class='erqi-input' bindblur='c_qi1'></input>
+                <input placeholder='期时序' disabled='true' class='erqi-input2'></input>
+              </view>
+              <view class='row1column1'>
+                <input type='number' value='{{hao}}' name='hao' class='erqi-input'></input>
+                <input placeholder='号滗水' disabled='true' class='erqi-input2'></input>
+              </view>
+            </view>
+            <view class='row3'>
+              <view class='row3column1'>
+                <view>
+                  <input type='number' value='{{shixu}}' name='shixu' class='input1'></input>
+                </view>
+                <view>
+                  <input type='number' value='{{zhouqi}}' name='zhouqi' class='input1'></input>
+                </view>
+              </view>
+              <view class='row3column2'>
+                <input placeholder='修正系数' class='input2' type='digit' bindblur='xz' value='{{xz}}'></input>
+              </view>
+            </view>
+            <view>
+              <button form-type='submit' class='shezhi'>设置</button>
+            </view>
+          </view>
+        </form>
+
+        <form bindsubmit='form_value_2'>
+          <view class='erqi'>
+
+            <view class='row1'>
+              <view class='row1column1'>
+
+                <input type='text' maxlength='1' value='{{qi2}}' name='qi_2' class='erqi-input'></input>
+                <input placeholder='期时序' disabled='true' class='erqi-input2'></input>
+              </view>
+              <view class='row1column1'>
+                <input type='number' value='{{hao2}}' name='hao_2' class='erqi-input'></input>
+                <input placeholder='号滗水' disabled='true' class='erqi-input2'></input>
+              </view>
+            </view>
+            <view class='row3'>
+              <view class='row3column1'>
+
+                <view>
+                  <input type='number' value='{{shixu2}}' name='shixu_2' class='input1'></input>
+                </view>
+                <view>
+                  <input type='number' value='{{zhouqi2}}' name='zhouqi_2' class='input1'></input>
+                </view>
+              </view>
+              <view class='row3column2'>
+
+                <input placeholder='修正系数2' class='input2' type='digit' bindblur='xz2' value='{{xz2}}'></input>
+              </view>
+            </view>
+            <view>
+              <button form-type='submit' class='shezhi'>设置</button>
+            </view>
+          </view>
+        </form>
+
+
+      </view>
+
+      <view>
+        <button bindtap='reset' class='reset'>刷新</button>
+      </view>
+      <view>
+        <button bindtap='shouzidong'>{{shouzidong}}</button>
+      </view>
+      <view>
+        <text>说明：\n要更改[]期，[]号，[]/[]（单位秒）的“[]”里的数字，需将自动点到手动停止自动刷新，然后点相应数字更改，点对应右侧的设置按钮确定，最后将手动点到自动开始自动刷新。\n\n绿底的数字是修正系数，第一个页面解锁以后按加减会修改这个值，或者直接在本页输入。\n\n绿底的输入框失去焦点触发更改不受右侧设置按钮影响。</text>
+      </view>
+    </swiper-item>
+
+  </block>
+</swiper>

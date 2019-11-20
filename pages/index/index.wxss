@@ -1,0 +1,155 @@
+/**index.wxss**/
+
+.erqi {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  font-size: 36rpx;
+  text-align: center;
+  border: rgb(207, 207, 207);
+  border-style: solid;
+  border-width: 0;
+  border-top-width:1px;
+  height: 5rem;
+}
+
+.shezhi {
+  background: #ddd;
+  height: 5rem;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.row1column1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.row2 {
+  height: 2.5rem;
+}
+
+.erqi-input {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: #fff;
+}
+
+.erqi-input2 {
+  height: 2.5rem;
+  width: 100px;
+  background: #f5f5f5;
+}
+
+.row3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.row3column1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 3.5rem;
+}
+.row3column2{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height:2rem;
+}
+
+.xianshi{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  margin-top: 0rem;
+}
+
+.user-qi {
+  width:50rem;  
+  padding-left: 0px;
+  text-align: center;
+  
+}
+.user-qi-2 {
+
+  border: gray;
+  border-style: solid;
+  border-width: 0;
+  border-left-width:1px;
+  width:50rem;
+  text-align: center;  
+}
+.dazi{
+  font-size: 2rem
+}
+.xiaozi {
+  text-align: left;
+  height:10px;
+  line-height: 10px
+}
+.text{
+  height:2rem;
+}
+.xzxs{
+  font-size: 0.7rem;
+}
+.input1{
+  text-align: center;
+  height: 3.5rem;
+  
+}
+.input2{
+  text-align: center;
+  height:1.5rem;
+  background: rgb(215, 224, 204);
+}
+.shuoming{
+  padding: 10px;
+  
+}
+.sxzq{
+  border: black;
+  border-style: solid;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  font-size: 2rem
+}
+.ccl{
+  font-size: 1.5rem
+}
+.ccl_i{
+  border:grey;
+  border-style: solid;
+  border-width: 0;
+  border-right-width: 1px;
+
+}
+
+.ccl_x{
+
+  border:grey;
+  border-style: solid;
+  border-width: 0;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  width: 25rem;
+  height:1.5rem;
+}
+
+.ccl_o{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 3.5rem;
+  border:grey;
+  border-style: solid;
+  border-width: 0;
+  border-top-width: 1px;
+
+}
